@@ -2530,7 +2530,7 @@
       "name": "cod/func_001091C0",
       "target_path": "build/asm/nonmatchings/cod/func_001091C0.o",
       "metadata": {
-        "complete": false,
+        "complete": true,
         "source_path": "src/cod/func_001091C0.c"
       },
       "base_path": "build/src/cod/func_001091C0.o",
@@ -3420,11 +3420,12 @@
       "name": "cod/func_0010F3C8",
       "target_path": "build/asm/nonmatchings/cod/func_0010F3C8.o",
       "metadata": {
-        "complete": false,
-        "source_path": null
+        "complete": true,
+        "source_path": "src/cod/func_0010F3C8.c"
       },
       "complete": true,
-      "source_path": "src/cod/func_0010F3C8.c"
+      "source_path": "src/cod/func_0010F3C8.c",
+      "base_path": "build/src/cod/func_0010F3C8.o"
     },
     {
       "name": "cod/func_0010F490",
@@ -4748,11 +4749,12 @@
       "name": "cod/func_00113240",
       "target_path": "build/asm/nonmatchings/cod/func_00113240.o",
       "metadata": {
-        "complete": false,
-        "source_path": null
+        "complete": true,
+        "source_path": "src/cod/func_00113240.c"
       },
       "complete": true,
-      "source_path": "src/cod/func_00113240.c"
+      "source_path": "src/cod/func_00113240.c",
+      "base_path": "build/src/cod/func_00113240.o"
     },
     {
       "name": "cod/func_001132E8",
@@ -4776,9 +4778,10 @@
       "name": "cod/func_00113390",
       "target_path": "build/asm/nonmatchings/cod/func_00113390.o",
       "metadata": {
-        "complete": false,
-        "source_path": null
-      }
+        "complete": true,
+        "source_path": "src/cod/func_00113390.c"
+      },
+      "base_path": "build/src/cod/func_00113390.o"
     },
     {
       "name": "cod/func_00113520",
@@ -4900,11 +4903,12 @@
       "name": "cod/func_00114530",
       "target_path": "build/asm/nonmatchings/cod/func_00114530.o",
       "metadata": {
-        "complete": false,
-        "source_path": null
+        "complete": true,
+        "source_path": "src/cod/func_00114530.c"
       },
       "complete": true,
-      "source_path": "src/cod/func_00114530.c"
+      "source_path": "src/cod/func_00114530.c",
+      "base_path": "build/src/cod/func_00114530.o"
     },
     {
       "name": "cod/func_001145F0",

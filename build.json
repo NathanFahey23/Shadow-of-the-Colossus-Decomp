@@ -4697,7 +4697,9 @@
    "seg": "cod",
    "vram": 1127312,
    "rom": 78736,
-   "asm": "asm/nonmatchings/cod/func_00113390.s"
+   "asm": "asm/nonmatchings/cod/func_00113390.s",
+   "c": "src/cod/func_00113390.c",
+   "own": {}
   },
   {
    "name": "func_00113520",
