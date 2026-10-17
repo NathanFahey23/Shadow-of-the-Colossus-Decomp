@@ -2382,7 +2382,9 @@
    "seg": "cod",
    "vram": 1079536,
    "rom": 30960,
-   "asm": "asm/nonmatchings/cod/func_001078F0.s"
+   "asm": "asm/nonmatchings/cod/func_001078F0.s",
+   "c": "src/cod/func_001078F0.c",
+   "own": {}
   },
   {
    "name": "func_00107970",
@@ -2424,7 +2426,9 @@
    "seg": "cod",
    "vram": 1080488,
    "rom": 31912,
-   "asm": "asm/nonmatchings/cod/func_00107CA8.s"
+   "asm": "asm/nonmatchings/cod/func_00107CA8.s",
+   "c": "src/cod/func_00107CA8.c",
+   "own": {}
   },
   {
    "name": "func_00107D58",
