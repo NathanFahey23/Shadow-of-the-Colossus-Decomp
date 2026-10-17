@@ -1,0 +1,26 @@
+#include "common.h"
+
+// TARGET: 0x00114C48
+
+void func_001147C0(void *);
+void *func_001148B8(void *);
+
+typedef struct {
+    s32 chcr;
+    u32 p0[3];
+    void *madr;
+    u32 p1[3];
+    u32 qwc;
+    u32 p2[3];
+    void *tadr;
+} dma_chan_t;
+
+void func_00114C48(dma_chan_t *d, void *tag) {
+    void *t = func_001148B8(tag);
+    func_001147C0(d);
+    if ((void *)-1 != d->tadr) {
+        d->tadr = t;
+    }
+    d->chcr = (d->chcr & -13) | 0x105;
+    d->qwc = 0;
+}
