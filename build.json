@@ -2810,7 +2810,9 @@
    "seg": "cod",
    "vram": 1091528,
    "rom": 42952,
-   "asm": "asm/nonmatchings/cod/func_0010A7C8.s"
+   "asm": "asm/nonmatchings/cod/func_0010A7C8.s",
+   "c": "src/cod/func_0010A7C8.c",
+   "own": {}
   },
   {
    "name": "func_0010A7D8",
