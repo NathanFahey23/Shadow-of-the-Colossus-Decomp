@@ -6,7 +6,7 @@
 A matching decompilation of Shadow of the Colossus (PS2, NTSC-U) into standard C, started with [decomp.wtf](https://decomp.wtf).
 Track live progress, function matching status, and history on **[ByteMatch](https://bytematch.dev/NathanFahey23/Shadow-of-the-Colossus-Decomp)**.
 
-Currently, **578 of 1043 functions (55.42%)** and **35.72% of code bytes** compile to byte-for-byte identical machine code.
+Currently, **582 of 1043 functions (55.80%)** and **36.65% of code bytes** compile to byte-for-byte identical machine code.
 `build.py` rebuilds the game from this tree and checks it against your original, byte for byte.
 
 ## Build
