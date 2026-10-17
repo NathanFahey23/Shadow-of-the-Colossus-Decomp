@@ -1,13 +1,13 @@
 #include "common.h"
 
-struct Struct_00109268 {
-    u8 pad[0x10];
+typedef struct Element {
+    u8 pad0[0x10];
     u32 field10;
-    u32 pad14;
+    struct Element *field14;
     u32 field18;
-};
+} Element;
 
-void func_00109268(struct Struct_00109268 *arg0) {
-    arg0->field18 = 0;
-    arg0->field10 &= 0xFFFFFFFEU;
+void func_00109268(Element *el) {
+    el->field18 = 0;
+    el->field10 &= ~1;
 }

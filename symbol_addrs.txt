@@ -874,6 +874,7 @@ func_00123A18 = 0x00123A18; // type:func
 func_001240A8 = 0x001240A8; // type:func
 func_00124628 = 0x00124628; // type:func
 func_00124B90 = 0x00124B90; // type:func
+__floatdisf = 0x00124B90; // type:func
 func_00124C78 = 0x00124C78; // type:func
 func_00124D90 = 0x00124D90; // type:func
 func_00124EB8 = 0x00124EB8; // type:func

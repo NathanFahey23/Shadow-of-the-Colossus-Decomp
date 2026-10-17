@@ -1,20 +1,24 @@
 #include "common.h"
 
-typedef struct {
-    u8 data[64];
+typedef struct Element {
+    u8 pad0[0x10];
+    u32 field10;
+    struct Element *field14;
+    u32 field18;
+    u8 pad1C[0x24]; // sizeof(Element) = 0x40
 } Element;
 
 typedef struct {
     u8 pad0[0x14];
     Element *elements;
     s32 count;
-    u8 pad1[8];
-    s32 index;
-} RingBuffer;
+    u8 pad1C[8];
+    s32 nextIndex;
+} ElementPool2;
 
-void *func_00109288(RingBuffer *arg0) {
-    s32 rem = arg0->index % arg0->count;
-    void *ret = &arg0->elements[rem];
-    arg0->index = rem + 1;
-    return ret;
+Element *func_00109288(ElementPool2 *pool) {
+    s32 rem = pool->nextIndex % pool->count;
+    Element *el = &pool->elements[rem];
+    pool->nextIndex = rem + 1;
+    return el;
 }

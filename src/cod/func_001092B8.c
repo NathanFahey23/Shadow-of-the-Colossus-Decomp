@@ -1,26 +1,27 @@
 #include "common.h"
 
-typedef struct {
-    u8 data[64];
+typedef struct Element {
+    u8 pad0[0x10];
+    u32 field10;
+    struct Element *field14;
+    u32 field18;
+    u8 pad1C[0x24]; // sizeof(Element) = 0x40
 } Element;
 
 typedef struct {
     u8 pad0[0x14];
     Element *elements;
     s32 count;
-    Element *other_elements;
-    s32 max;
-    s32 index;
-} RingBuffer;
+    Element *elements2;
+    s32 maxCount;
+    s32 nextIndex;
+} ElementPool2;
 
-void *func_00109288();
+Element *func_00109288(ElementPool2 *pool);
 
-void *func_001092B8(RingBuffer *arg0, s32 arg1) {
-    void *ret;
-    if (arg1 < 0 || arg1 >= arg0->max) {
-        ret = func_00109288();
-    } else {
-        ret = &arg0->other_elements[arg1];
+Element *func_001092B8(ElementPool2 *pool, s32 index) {
+    if (index < 0 || index >= pool->maxCount) {
+        return func_00109288(pool);
     }
-    return ret;
+    return &pool->elements2[index];
 }
